@@ -1,25 +1,46 @@
 package com.imretoth.robodog.data;
 
 public class Dog {
-    private int age;
     private String name;
-    private BreedType breed;
+    private String age;
+    private String breed;
 
-    public Dog(int age, String name, BreedType breed) {
-        this.age = age;
+    public Dog(String name, String age, String breed) {
         this.name = name;
+        this.age = age;
         this.breed = breed;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public String getName() {
         return name;
     }
 
-    public BreedType getBreed() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getBreed() {
         return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", breed='" + breed + '\'' +
+                '}';
     }
 }
