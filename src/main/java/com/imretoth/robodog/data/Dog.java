@@ -2,10 +2,10 @@ package com.imretoth.robodog.data;
 
 public class Dog {
     private String name;
-    private String age;
-    private String breed;
+    private int age;
+    private BreedType breed;
 
-    public Dog(String name, String age, String breed) {
+    public Dog(String name, int age, BreedType breed) {
         this.name = name;
         this.age = age;
         this.breed = breed;
@@ -19,19 +19,19 @@ public class Dog {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getBreed() {
+    public BreedType getBreed() {
         return breed;
     }
 
-    public void setBreed(String breed) {
+    public void setBreed(BreedType breed) {
         this.breed = breed;
     }
 
@@ -40,7 +40,7 @@ public class Dog {
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", age='" + age + '\'' +
-                ", breed='" + breed + '\'' +
+                ", breed=" + breed +
                 '}';
     }
 }
