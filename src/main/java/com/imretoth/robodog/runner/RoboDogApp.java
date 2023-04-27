@@ -20,9 +20,9 @@ public class RoboDogApp implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        List<Dog> dogList = IntStream.rangeClosed(1, 100)
+        List<Dog> dogList = IntStream.rangeClosed( 1, 100 )
                 .mapToObj( e -> dogCreator.createRandomDog() )
-                .collect( Collectors.toList());
+                .collect( Collectors.toList() );
 
         for (Dog dog : dogList) {
             System.out.println( dog.toString() );
