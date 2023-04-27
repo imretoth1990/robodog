@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-
-@Component
+/*
 public class RoboDogApp implements ApplicationRunner {
     DogCreator dogCreator;
 
@@ -28,4 +27,8 @@ public class RoboDogApp implements ApplicationRunner {
             System.out.println( dog.toString() );
         }
     }
+
+
 }
+ */
+
